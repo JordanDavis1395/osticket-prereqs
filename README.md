@@ -35,9 +35,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
 Create an Azure Virtual Machine Windows 10, 4 vCPUs
-Name: osticket-vm
-Username: labuser
-Password: osTicketPassword1!
+- Name: osticket-vm
+- Username: labuser
+- Password: osTicketPassword1!
 </p>
 <br />
 
