@@ -35,9 +35,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
 Create an Azure Virtual Machine Windows 10, 4 vCPUs
-- Name: osticket-vm
-- Username: labuser
-- Password: osTicketPassword1!
+
+Name: osticket-vm
+
+Username: labuser
+
+Password: osTicketPassword1!
 </p>
 <br />
 
@@ -47,7 +50,10 @@ Create an Azure Virtual Machine Windows 10, 4 vCPUs
 <p>
 Log into the VM with Remote Desktop
 
-Within the VM (osticket-vm), download the osTicket-Installation-Files.zip and unzip it onto your desktop. The folder should be called “osTicket-Installation-Files”
+Within the VM (osticket-vm), download the osTicket-Installation-Files.zip and unzip it onto your desktop. 
+
+The folder should be called “osTicket-Installation-Files”
+
 We will use the files in this folder to install osTicket and some of the dependencies.
 </p>
 <br />
@@ -57,6 +63,7 @@ We will use the files in this folder to install osTicket and some of the depende
 </p>
 <p>
 Install / Enable IIS in Windows WITH CGI
+
 World Wide Web Services -> Application Development Features -> [X] CGI
 </p>
 <br />
@@ -106,10 +113,15 @@ From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.
 </p>
 <p>
 From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5.5.62-win32.msi)
+
 Typical Setup ->
+
 Launch Configuration Wizard (after install) ->
+
 Standard Configuration ->
+
 Username: root
+
 Password: root
 </p>
 <br />
@@ -144,6 +156,7 @@ Reload IIS (Open IIS, Stop and Start the server)
 <p>
 Install osTicket v1.15.8
 From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”
+
 Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”
 </p>
 <br />
@@ -161,6 +174,7 @@ Reload IIS (Open IIS, Stop and Start the server)
 </p>
 <p>
 Go to sites -> Default -> osTicket
+
 On the right, click “Browse *:80”
 </p>
 <br />
@@ -170,12 +184,19 @@ On the right, click “Browse *:80”
 </p>
 <p>
 Note that some extensions are not enabled
+
 Go back to IIS, sites -> Default -> osTicket
+
 Double-click PHP Manager
+
 Click “Enable or disable an extension”
+
 Enable: php_imap.dll
+
 Enable: php_intl.dll
+
 Enable: php_opcache.dll
+
 Refresh the osTicket site in your browser, observe the changes
 </p>
 <br />
@@ -185,7 +206,9 @@ Refresh the osTicket site in your browser, observe the changes
 </p>
 <p>
 Rename: ost-config.php
+
 From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+
 To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 </p>
 <br />
@@ -195,7 +218,9 @@ To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 </p>
 <p>
 Assign Permissions: ost-config.php
+
 Disable inheritance -> Remove All
+
 New Permissions -> Everyone -> All
 </p>
 <br />
@@ -205,7 +230,9 @@ New Permissions -> Everyone -> All
 </p>
 <p>
 Continue Setting up osTicket in the browser (click Continue)
+
 Name Helpdesk
+
 Default email (receives email from customers)
 </p>
 <br />
@@ -214,10 +241,15 @@ Default email (receives email from customers)
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
 From the “osTicket-Installation-Files” folder, install HeidiSQL.
+
 Open Heidi SQL
+
 Create a new session, root/root
+
 Connect to the session
+
 Create a database called “osTicket”
 </p>
 <br />
@@ -226,10 +258,15 @@ Create a database called “osTicket”
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
 Continue Setting up osTicket in the browser
+
 MySQL Database: osTicket
+
 MySQL Username: root
+
 MySQL Password: root
+
 Click “Install Now!”
 </p>
 <br />
@@ -238,7 +275,9 @@ Click “Install Now!”
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
 Congratulations, hopefully it is installed with no errors!
+
 Browse to your help desk login page: http://localhost/osTicket/scp/login.php
 </p>
 <br />
@@ -247,7 +286,9 @@ Browse to your help desk login page: http://localhost/osTicket/scp/login.php
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
 End Users osTicket URL:
+
 http://localhost/osTicket/ 
 </p>
 <br />
@@ -256,8 +297,11 @@ http://localhost/osTicket/
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
 Clean up
+
 Delete: C:\inetpub\wwwroot\osTicket\setup
+
 Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 </p>
 <br />
