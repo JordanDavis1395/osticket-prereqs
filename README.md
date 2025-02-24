@@ -80,19 +80,16 @@ From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.
 From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5.5.62-win32.msi)
 
 Typical Setup ->
-
+![Annotation 2025-02-24 181712](https://github.com/user-attachments/assets/0004cb9b-a6d8-4904-903e-e1d56cbee909)
 Launch Configuration Wizard (after install) ->
 
 Standard Configuration ->
-
-Username: root
-
-Password: root
-
-![Annotation 2025-02-24 181712](https://github.com/user-attachments/assets/0004cb9b-a6d8-4904-903e-e1d56cbee909)
 ![Annotation 2025-02-24 181808](https://github.com/user-attachments/assets/558ead31-404b-464d-8f1a-0169eae79500)
+Username: root
 ![Annotation 2025-02-24 181904](https://github.com/user-attachments/assets/6e8dac9d-9a9e-4cec-ae0e-7d21fe859040)
+Password: root
 ![Annotation 2025-02-24 182028](https://github.com/user-attachments/assets/b6bfdb9a-5f65-4747-a3b0-d4835d0c13e1)
+
 
 Open IIS as an Admin
 ![Annotation 2025-02-24 182112](https://github.com/user-attachments/assets/52561cae-dfbc-42e0-8f50-c3ba6a4bb1be)
