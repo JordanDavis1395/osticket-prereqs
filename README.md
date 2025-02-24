@@ -25,20 +25,19 @@ This will show you all of the the prerequisites and installation of the open-sou
 <h2>Installation Steps</h2>
 
 Create an Azure Virtual Machine Windows 10, 4 vCPUs
-
 Name: osticket-vm
 
 Username: labuser
 
+![Screenshot 2025-02-24 115311](https://github.com/user-attachments/assets/b4f746ac-533d-4122-bea5-48f4fb8ea6d5)
+
 Password: osTicketPassword1!
-![Screenshot 2025-02-24 115033](https://github.com/user-attachments/assets/cbd610a6-1352-420c-8d31-7ac3c401c583)
-![Screenshot 2025-02-24 115206](https://github.com/user-attachments/assets/5cc95b4c-1723-4fac-9e90-9104d561749d)
-![Screenshot 2025-02-24 115311](https://github.com/user-attachments/assets/0328a35e-b4f1-4eec-b6fa-bc7f69830313)
 ![Screenshot 2025-02-24 115405](https://github.com/user-attachments/assets/902dcca5-0d30-426b-9c66-c539d3dfccfc)
 
 
 Log into the VM with Remote Desktop
-
+![Screenshot 2025-02-24 115900](https://github.com/user-attachments/assets/f9541760-936c-4b74-92aa-0796fa649cf1)
+![Screenshot 2025-02-24 115817](https://github.com/user-attachments/assets/34824508-37cd-41da-965f-659ed761bfb1)
 Within the VM (osticket-vm), download the osTicket-Installation-Files.zip and unzip it onto your desktop.
 
 This is the link to the file: https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD
@@ -46,8 +45,6 @@ This is the link to the file: https://drive.google.com/uc?export=download&id=1b3
 The folder should be called “osTicket-Installation-Files”
 
 We will use the files in this folder to install osTicket and some of the dependencies.
-![Screenshot 2025-02-24 115817](https://github.com/user-attachments/assets/34824508-37cd-41da-965f-659ed761bfb1)
-![Screenshot 2025-02-24 115900](https://github.com/user-attachments/assets/f9541760-936c-4b74-92aa-0796fa649cf1)
 
 
 Install / Enable IIS in Windows WITH CGI
@@ -124,10 +121,10 @@ Go to sites -> Default -> osTicket
 
 On the right, click “Browse *:80”
 ![Annotation 2025-02-24 183222](https://github.com/user-attachments/assets/0df79224-865a-4073-83cd-d3cac09f6b58)
-![Annotation 2025-02-24 183256](https://github.com/user-attachments/assets/0cbddbc0-3a83-4594-8403-2bed35e1aa90)
+
 
 Note that some extensions are not enabled
-
+![Annotation 2025-02-24 183256](https://github.com/user-attachments/assets/0cbddbc0-3a83-4594-8403-2bed35e1aa90)
 Go back to IIS, sites -> Default -> osTicket
 
 Double-click PHP Manager
@@ -147,10 +144,6 @@ Enable: php_opcache.dll
 
 
 Refresh the osTicket site in your browser, observe the changes
-![Annotation 2025-02-24 183544](https://github.com/user-attachments/assets/8396f7ee-07ae-46a0-93d8-eae608aad96d)
-
-
-
 
 Rename: ost-config.php
 
